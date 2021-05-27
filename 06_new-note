@@ -1,0 +1,19 @@
+note over browser
+user writes "New note"
+and hits the submit button
+end note
+
+note over browser
+browser adds "New note"
+to its local list of notes
+and re-renders the list
+on the page
+end note
+
+note over browser
+browser sends "New note"
+to the server
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: {"message":"note created"}
